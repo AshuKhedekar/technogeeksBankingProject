@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/customerDetail.css" />
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link rel="stylesheet" href="../Css/TransferPage.css" />
+    <title>Transfer Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center; margin: 0px">Banking Management System</h2>
+        <div class="nav">
+          <span style="color: white">Axis Bank</span>
+          <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./customer_details.html">Customers</a></li>
+            <li><a href="./transfer_money.html">Transfer Money</a></li>
+            <li>Transaction History</li>
+          </ul>
+        </div>
+        <h2 style="text-align: center;margin:0px">With Whom The Transaction</h2>
+        <div class="table-container">
+          <table id="table" border="1px solid black">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+  
+            </tbody>
+          </table>
+            <p><label for="sender">Sender :</label></p>
+           <p> <select id="sender" name="sender" required>
+              <option value="" disabled selected>Select sender</option>
+                <option value="Miss Delta Doyle" data-balance="8125">Miss Delta Doyle (Balance : 8125)</option>
+                <option value="Prof. Gay Gerhold" data-balance="56955">Prof. Gay Gerhold (Balance : 56955) </option>
+                <option value="Rowland Borer" data-balance="4909627">Rowland Borer (Balance : 4909627)</option>
+                <option value="Leonie Quitzon" data-balance="437693633">Leonie Quitzon (Balance : 437693633)</option>
+                <option value="Amelie Ryan Sr." data-balance="7">Amelie Ryan Sr. (Balance :7)</option>
+                <option value="Mr. Sonny Roberts IV" data-balance="22196596">Mr. Sonny Roberts IV (Balance : 22196596)</option>
+                <option value="Matilde Casper" data-balance="7071">Matilde Casper (Balance : 7071)</option>
+                <option value="Miss Lilla O'Connell" data-balance="99900">Miss Lilla O'Connell (Balance : 99900)</option>
+                <option value="Wilber Carroll" data-balance="251">Wilber Carroll (Balance : 251)</option>
+                <option value="Gina Koepp" data-balance="8166517">Gina Koepp (Balance : 8166517)</option>
+                <option value="Maudie Yundt" data-balance="5865">Maudie Yundt (Balance :5865)</option>
+                <option value="Belle Jacobi" data-balance="74">Belle Jacobi (Balance :74)</option>
+            </select>
+          </p>
+            <p><label for="recipient">Receiver :</label></p>
+          <p>
+          <select id="recipient" name="recipient" required>
+              <option value="" disabled selected>Select recipient</option>
+              <option value="Miss Delta Doyle" data-balance="8125">Miss Delta Doyle (Balance: 8125)</option>
+              <option value="Prof. Gay Gerhold" data-balance="56955">Prof. Gay Gerhold (Balance: 56955)</option>
+              <option value="Rowland Borer" data-balance="4909627">Rowland Borer (Balance : 4909627)</option>
+                <option value="Leonie Quitzon" data-balance="437693633">Leonie Quitzon (Balance : 437693633)</option>
+                <option value="Amelie Ryan Sr." data-balance="7">Amelie Ryan Sr. (Balance :7)</option>
+                <option value="Mr. Sonny Roberts IV" data-balance="22196596">Mr. Sonny Roberts IV (Balance : 22196596)</option>
+                <option value="Matilde Casper" data-balance="7071">Matilde Casper (Balance : 7071)</option>
+                <option value="Miss Lilla O'Connell" data-balance="99900">Miss Lilla O'Connell (Balance : 99900)</option>
+                <option value="Wilber Carroll" data-balance="251">Wilber Carroll (Balance : 251)</option>
+                <option value="Gina Koepp" data-balance="8166517">Gina Koepp (Balance : 8166517)</option>
+                <option value="Maudie Yundt" data-balance="5865">Maudie Yundt (Balance :5865)</option>
+                <option value="Belle Jacobi" data-balance="74">Belle Jacobi (Balance :74)</option>
+        
+          </select>
+        </p>
+            <p><label for="amount">Amount : </label></p>
+            <p>
+                <input id="amount" name="amount" value="amount" type="number" required/>
+            </p>
+            <p><button type="button" id="transferBtn">Transfer</button></p>
+
+            <p>
+              <span id="senderInfo">Sender : </span>
+              <span id="receiverInfo">Receiver : </span>
+            </p>
+        </div>
+        <div class="footer">
+          <h2 style=" text-align: center;font-size: 12px;">
+            &copy;rights belongs to Axis bank @ 2024.
+          </h2>
+        </div>
+      
+      </div>
+      <script src="../Javascript/TransactionPage.js"></script>
+</body>
+</html>
